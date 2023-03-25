@@ -105,11 +105,13 @@ main{
 
 
 .campo-encriptado {
+    position: relative;
     width: 25%;
-    height: 400px;
+    height: 80%;
     padding: 2%;
     background-color: #FFFFFF;
     margin-right: 4%;
+    margin-bottom: 3%;
     border-radius: 15px;
     box-shadow: 0px 8px 12px -2px;
 }
@@ -137,11 +139,12 @@ main{
 }
 
 #texto-encriptado{
+    width: 90%;
     padding-top: 10px;
     border: none;
     outline: none;
     background: none;
-    position: fixed;
+    position: relative;
     resize:inherit;
     padding-left: 18px ;
 
@@ -156,8 +159,8 @@ main{
     border: 1px solid #0A3871;
     color: #0A3871;
     position: relative;
-    margin-left: 33px;
-    margin-top: 350px;
+    margin-left: 20%;
+    margin-top: 95%;
     display: none;
 }
 
@@ -168,4 +171,110 @@ footer{
     font-size: smaller;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+@media screen and (max-width:640px) {
+    header{
+        display: grid;
+        text-align: center;
+    }
+
+    .titulo{
+        position: relative;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .logo{
+        position: relative;
+        text-align: center;
+    }
+
+    body{ 
+        display: grid;
+        width: 80%;
+        margin: 3%;
+    }
+
+    main{
+        display:grid;
+    }
+    
+    .campo-a-encriptar{
+        padding: 5%;
+        width: 80%;
+        height: 40%;
+        position: relative;
+    }
+
+    .texto-a-encriptar{
+        height: 200px;
+    }
+
+    .cuadro-de-texto{
+        position: relative;
+        width: 80%;
+        height: 200px;
+        padding-left: 5%;
+        margin-bottom: 0%;
+    
+    }
+
+    #mensaje::placeholder {
+        position: fixed;
+        font-size: medium;
+        text-align: center;
+      }
+
+    .advertencia{
+        padding-left: 10px;
+    }
+    
+    .advertencia img{
+        padding-right: 2px;
+    }
+
+    .botones{
+        padding-left: 4%;
+        padding-top:5%;
+     }
+
+     #btn-encriptar{
+        Width: 100px;
+    }
+    
+    #btn-desencriptar{
+        Width: 100px;
+    }
+
+    .campo-encriptado {
+        width: 90%;
+        height: 110px;
+        padding: 2%;
+        margin: 3%;
+    }
+    
+    .sin-texto{
+        display: none;
+    }
+
+    .campo-encriptado h3 {
+        font-size: small;
+        font-weight: bold;
+    }
+
+    #texto-encriptado::placeholder {
+        font-size: smaller;
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    #btnCopiar{
+        Width: 90%;
+        margin-left: 2%;
+        margin-top: 40%;
+        display: none;
+        position: relative;
+    }
 }

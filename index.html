@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js"></script>
     <title>Encriptador</title>
-    
+
 </head>
 
 <body>
@@ -28,11 +28,11 @@
 
     <main>
 
-         <div class="campo-a-encriptar">
+        <div class="campo-a-encriptar">
             <div class="texto-a-encriptar">
-            <input id="mensaje" class="cuadro-de-texto" placeholder="Escriba aqui su mensaje"></input>
+                <input id="mensaje" class="cuadro-de-texto" placeholder="Escriba aqui su mensaje"></input>
             </div>
-                
+
             <div class="advertencia">
                 <img src="./imagenes/Vector2.svg">
                 <p>Sólo letras minúsculas y sin acentos</p>
@@ -43,30 +43,31 @@
                 <button type="button" id="btn-desencriptar">Desencriptar</button>
             </div>
 
-         </div>
+        </div>
 
         <div class="campo-encriptado">
             <img id="sinTexto" src="./imagenes/Muñeco.svg" class="sin-texto">
-            <h3 id="sinMensaje" class = "sin-mensaje">Ningún mensaje fue encontrado</h3>
-            <textarea id="texto-encriptado" placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
+            <h3 id="sinMensaje" class="sin-mensaje">Ningún mensaje fue encontrado</h3>
+            <textarea id="texto-encriptado"
+                placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
             <button id="btnCopiar">Copiar</button>
         </div>
 
     </main>
-    
+
     <footer>
         <p class="copyright">&copy Copyright Gabriela García - 2023</p>
     </footer>
 </body>
 <script>
-     var botonEncriptar = document.querySelector("#btn-encriptar");
-     botonEncriptar.onclick = encriptar;
+    var botonEncriptar = document.querySelector("#btn-encriptar");
+    botonEncriptar.onclick = encriptar;
 
-     var botonDesencriptar = document.querySelector("#btn-desencriptar");
-     botonDesencriptar.onclick = desencriptar;
+    var botonDesencriptar = document.querySelector("#btn-desencriptar");
+    botonDesencriptar.onclick = desencriptar;
 
-     var botonCopiar= document.querySelector("#btnCopiar");
-     botonCopiar.onclick = copiar;
+    var botonCopiar = document.querySelector("#btnCopiar");
+    botonCopiar.onclick = copiar;
 </script>
 
 
